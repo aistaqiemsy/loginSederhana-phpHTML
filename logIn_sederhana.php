@@ -9,17 +9,17 @@
 
     Log In Sederhana <br>
     <form action="#" method="get">
-        <input type="text" name="username"> <br>
-        <input type="password" name="password"> <br>
-        <input type="submit" value="Log In" name="login">
+        <input type="text" nama="username"> <br>
+        <input type="password" nama="password"> <br>
+        <input type="submit" value="Log In" nama="login">
     </form>
 
     <!-- PHP untuk melakukan aksi log in -->
      <?php
         if (isset($_GET['login'])) {    
             // tambahkan logika AND ( && )
-            $namaPengguna = $_GET['username'];
-            $kataSandi = $_GET['password'];
+            $namaPengguna = $_GET['user name'];
+            $kataSandi = $_GET['pasword'];
 
             if($namaPengguna == "@aistaqiemsy" && $kataSandi == "123") {
                 echo "<hr>";
